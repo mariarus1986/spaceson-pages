@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reserva de Salas de Reuniones y Coworking en Madrid | SpacesON</title>
+<meta content="Encuentra y reserva las mejores salas de reuniones y espacios de coworking en Madrid. Compara opciones en Salamanca, Chamberí y Chamartín sin comisiones." name="description"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#526478",
+                      "surface-variant": "#d3e4fe",
+                      "on-surface-variant": "#424752",
+                      "on-tertiary-fixed": "#171c20",
+                      "inverse-primary": "#acc7ff",
+                      "on-error": "#ffffff",
+                      "surface-container": "#e5eeff",
+                      "on-primary-fixed-variant": "#004491",
+                      "on-secondary-fixed-variant": "#36485b",
+                      "outline-variant": "#c2c6d4",
+                      "surface-container-lowest": "#ffffff",
+                      "primary": "#003f87",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#b5c8df",
+                      "on-primary-container": "#bbd0ff",
+                      "on-tertiary-fixed-variant": "#42474b",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed": "#dfe3e8",
+                      "secondary": "#4e6073",
+                      "on-primary": "#ffffff",
+                      "primary-fixed": "#d7e2ff",
+                      "surface-bright": "#f8f9ff",
+                      "inverse-surface": "#213145",
+                      "surface-dim": "#cbdbf5",
+                      "on-primary-fixed": "#001a40",
+                      "primary-container": "#0056b3",
+                      "primary-fixed-dim": "#acc7ff",
+                      "surface-container-high": "#dce9ff",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#c3c7cc",
+                      "surface-container-low": "#eff4ff",
+                      "secondary-container": "#cfe2f9",
+                      "error": "#ba1a1a",
+                      "surface": "#f8f9ff",
+                      "on-surface": "#0b1c30",
+                      "on-background": "#0b1c30",
+                      "tertiary": "#3d4246",
+                      "on-secondary-fixed": "#091d2e",
+                      "background": "#f8f9ff",
+                      "surface-tint": "#115cb9",
+                      "tertiary-container": "#54595d",
+                      "on-secondary": "#ffffff",
+                      "outline": "#727784",
+                      "on-tertiary-container": "#ccd0d5",
+                      "secondary-fixed": "#d1e4fb",
+                      "surface-container-highest": "#d3e4fe",
+                      "inverse-on-surface": "#eaf1ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "section-padding": "80px",
+                      "margin-mobile": "16px",
+                      "stack-sm": "8px",
+                      "stack-lg": "32px",
+                      "container-max": "1280px",
+                      "stack-md": "16px"
+              },
+              "fontFamily": {
+                      "h2": ["Manrope"],
+                      "label-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "h3": ["Manrope"],
+                      "caption": ["Inter"],
+                      "h1": ["Manrope"]
+              },
+              "fontSize": {
+                      "h2": ["36px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                      "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                      "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md fixed top-0 w-full z-50 border-b border-slate-100 dark:border-slate-800 shadow-[0px_4px_20px_rgba(0,0,0,0.05)]">
+<div class="max-w-[1280px] mx-auto px-8 flex justify-between items-center h-20 font-manrope antialiased tracking-tight">
+<div class="text-2xl font-extrabold text-blue-800 dark:text-blue-300 tracking-tighter"><img alt="SpacesON Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujmXW5tIJ09GYF-YT4Wuis9bU4aIkK70iHTAJD6OJD_ggd1d4b953VvwhriCOCEYgw6WUhx3cylODBPKhIAs8oAcCtDpQ7Ms8SqJlPrMxVuvFv-zcVVhW5AjXJDhyq_Om2iCmobZIqfUbonZWm-dHDfJP55MIdHELs8P-fzd3xYfyx9P8jCc9VLboFPHn273G9rPS2C7WAIlehuDqLlw68nrDxJGAwIA_ZHalTpgFG4ddcSygqlxq488zMb39v1oohD6dQB76IihrU"/></div>
+<nav class="hidden md:flex gap-8">
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-700 dark:border-blue-400 pb-1 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200" href="#">Locations</a>
+</nav>
+<div class="flex gap-4 items-center">
+<button class="text-blue-700 dark:text-blue-400 font-semibold px-4 py-2 active:scale-95 transition-transform">Contact Us</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-bold shadow-md active:scale-95 transition-transform">Book Now</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.4]" data-alt="A professional and spacious modern corporate office in Madrid with high ceilings, large windows overlooking the city skyline, and minimalist furniture. The lighting is bright and natural, creating a productive and welcoming atmosphere. The color palette features clean whites, deep blues, and warm wood accents, consistent with a high-end corporate marketplace aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBij7tuZK7V27f6TLhuwIRZ5TSiT07nExi-VLJ0iN4P2AHMdfQfUFWFmGtUaKgiESSPEaXmBlPgcjMdarCKZvTmtrISoMPUz5ISGm-QEnIAx8S4jOCBEHqhrPuZs6wDVtlvJ9pBJzpexNNYRSFKzS6goQbotfrVYOZ_avKSj1uIVq7ITqqALiNWegebpOyrRwVyp3V6wvj5-7hdKIS63lu7hu09A3FJ4eDEDAuEj87XIi8WkSxcnu3N2OFgrvD4yOkawy0lKdrES712"/>
+</div>
+<div class="max-w-[1280px] mx-auto px-8 relative z-10 w-full py-section-padding grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-white space-y-stack-md">
+<h1 class="font-h1 text-h1 max-w-xl">Encuentra la sala de reuniones perfecta en Madrid en 24 horas</h1>
+<p class="font-body-lg text-body-lg text-blue-100 max-w-lg">Compara espacios de coworking y salas de reuniones fácilmente. Recibe ofertas personalizadas rápidamente sin comisiones.</p>
+<div class="flex flex-wrap gap-4 pt-4">
+<div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+<span class="material-symbols-outlined text-primary-fixed">verified</span>
+<span class="text-sm font-label-md">+500 Espacios Verificados</span>
+</div>
+<div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+<span class="material-symbols-outlined text-primary-fixed">timer</span>
+<span class="text-sm font-label-md">Respuesta en 24h</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl p-8 shadow-2xl space-y-6">
+<h3 class="font-h3 text-h3 text-on-surface">Solicitar propuestas gratis</h3>
+<form class="space-y-4" id="leadForm" style="display:flex;flex-direction:column;gap:10px;">
+<div class="space-y-2">
+<label class="font-label-md text-on-surface-variant">Nombre Completo</label>
+<input class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary-container h-12" placeholder="Ej: Juan Pérez" type="text" name="name" required />
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-on-surface-variant">Email Corporativo</label>
+<input class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary-container h-12" placeholder="juan@empresa.com" type="email" name="email" required />
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-on-surface-variant">Requerimientos (Personas, fechas, zona...)</label>
+<textarea class="w-full rounded-lg border-slate-300 focus:border-primary focus:ring-primary-container" placeholder="Necesito una sala para 12 personas cerca de Atocha para el martes..." rows="3" name="message" required></textarea>
+</div>
+ <input type="hidden" name="source" value="seo_madrid" />
+ <input type="hidden" name="city" value="madrid">
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:bg-primary-container transition-all active:scale-[0.98] shadow-lg" type="submit">Solicitar propuestas gratis</button>
+<p id="formStatus" style="font-size:14px;"></p>
+</form>
+<script>
+document.getElementById("leadForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const status = document.getElementById("formStatus");
+  status.innerText = "Enviando...";
+
+  const formData = new FormData(this);
+
+  try {
+    const response = await fetch("https://www.spaces-on.com/api/1.1/wf/create_lead", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      status.innerText = "✅ Solicitud enviada. Te contactamos en breve.";
+      this.reset();
+
+      // redirect option (optionnel)
+      // window.location.href = "/gracias";
+
+    } else {
+      status.innerText = "❌ Error al enviar. Intenta de nuevo.";
+    }
+
+  } catch (error) {
+    status.innerText = "❌ Error de conexión.";
+  }
+});
+</script>
+<p class="text-caption text-on-surface-variant text-center">Garantizamos respuesta rápida y atención personalizada.</p>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="bg-surface-container-low py-12">
+<div class="max-w-[1280px] mx-auto px-8 text-center">
+<p class="font-label-md text-on-secondary-container mb-8 uppercase tracking-widest">Empresas y startups que confían en nosotros</p>
+<div class="flex flex-wrap justify-center items-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all">
+<div class="h-8 flex items-center font-extrabold text-2xl text-slate-400">LOGOTECH</div>
+<div class="h-8 flex items-center font-extrabold text-2xl text-slate-400">FINANCEHUB</div>
+<div class="h-8 flex items-center font-extrabold text-2xl text-slate-400">MADRIDVENTURE</div>
+<div class="h-8 flex items-center font-extrabold text-2xl text-slate-400">GLOBALCO</div>
+<div class="h-8 flex items-center font-extrabold text-2xl text-slate-400">INNOVA</div>
+</div>
+</div>
+</section>
+<!-- How It Works Section -->
+<section class="py-section-padding bg-white">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-primary mb-4">Reserva en 3 sencillos pasos</h2>
+<p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Nuestro proceso está diseñado para que no pierdas ni un minuto buscando el espacio ideal.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-12">
+<div class="text-center group">
+<div class="w-20 h-20 bg-primary-container text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">send</span>
+</div>
+<h3 class="font-h3 text-h3 mb-2">Paso 1: Envía tu solicitud</h3>
+<p class="text-on-surface-variant">Rellena el formulario con tus necesidades específicas de espacio, ubicación y capacidad.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-primary text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">hub</span>
+</div>
+<h3 class="font-h3 text-h3 mb-2">Paso 2: Te conectamos</h3>
+<p class="text-on-surface-variant">Filtramos nuestra red de los mejores espacios de coworking en Madrid para encontrar los que mejor encajen.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-primary-container text-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl">event_available</span>
+</div>
+<h3 class="font-h3 text-h3 mb-2">Paso 3: Reserva</h3>
+<p class="text-on-surface-variant">Compara las propuestas recibidas directamente en tu email y elige la que más te guste.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SEO Content Section -->
+<section class="py-section-padding bg-surface-container-lowest">
+<div class="max-w-[1280px] mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-6">
+<h2 class="font-h2 text-h2 text-primary">Salas de reuniones en Madrid para profesionales exigentes</h2>
+<p class="text-body-md text-on-surface-variant">
+                        Madrid es el epicentro de los negocios en España, y contar con el espacio adecuado es vital para el éxito de cualquier reunión comercial, taller creativo o junta directiva. Nuestra plataforma te ofrece acceso exclusivo a las mejores **salas de reuniones en Madrid**, desde espacios minimalistas en el corazón financiero hasta entornos creativos en barrios emblemáticos.
+                    </p>
+<h3 class="font-h3 text-h3 text-secondary">Espacios de coworking y Centros de Negocios</h3>
+<p class="text-body-md text-on-surface-variant">
+                        Ya sea que busques **espacios de coworking** modernos con todas las amenidades o **centros de negocios** tradicionales con servicios premium, MadridRooms simplifica tu búsqueda. Trabajamos con los proveedores más prestigiosos para garantizar que cada sala esté equipada con la última tecnología en conectividad, pantallas 4K y mobiliario ergonómico.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-4 rounded-lg border border-outline-variant shadow-sm">
+<h4 class="font-bold text-primary mb-1">Salamanca</h4>
+<p class="text-caption">Elegancia y prestigio corporativo en la Milla de Oro.</p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-outline-variant shadow-sm">
+<h4 class="font-bold text-primary mb-1">Chamberí</h4>
+<p class="text-caption">Cercanía y un ambiente profesional pero acogedor.</p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-outline-variant shadow-sm">
+<h4 class="font-bold text-primary mb-1">Chamartín</h4>
+<p class="text-caption">Accesibilidad total y cercanía al centro financiero CTBA.</p>
+</div>
+<div class="bg-white p-4 rounded-lg border border-outline-variant shadow-sm">
+<h4 class="font-bold text-primary mb-1">Centro</h4>
+<p class="text-caption">El pulso de la ciudad para eventos que buscan impacto.</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A modern collaborative workspace in Madrid with people working in a bright, sun-drenched room with large windows. The interior features contemporary industrial design, with exposed brick, minimalist white desks, and vibrant green plants scattered around. The atmosphere is professional, energetic, and clean, reflecting a high-standard coworking environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUPWoN3OymLTk6ZykojbcZElewxwVMO3N5HULSwcqu7bUwasSvHx_Z8REPh5mDqOEWOh9tSl2OwxqGVkIQBNh58ZRx7gKcOr0Z0HbBwwWJidPMYBjHS1aQy9bXVfGkJO-3P4_MjFGBLCFtL-rfSOTmH02K6rZrG1EW061LWwQWOXSzSK9r97ObrXZSesDvAjcPH-0MDHnN5kJzTBgl9iz1vXqH5sgd47k6QGrg-PxWUvkPfwFjxVJBrXqCmRcY9kchSZoZT7zk0-Z0"/>
+</div>
+<div class="absolute -bottom-6 -left-6 glass-card p-6 rounded-xl shadow-xl max-w-xs">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white">
+<span class="material-symbols-outlined">sentiment_very_satisfied</span>
+</div>
+<div class="font-bold text-on-surface">98% Satisfacción</div>
+</div>
+<p class="text-caption text-on-surface-variant">Basado en más de 2,000 reservas realizadas este año en Madrid.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-section-padding bg-primary text-on-primary">
+<div class="max-w-[1280px] mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 mb-4">¿Por qué elegir MadridRooms?</h2>
+<p class="text-body-lg opacity-80">La forma más inteligente de reservar espacios de trabajo.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+<span class="material-symbols-outlined text-4xl mb-4">speed</span>
+<h3 class="font-h3 text-h2 mb-2 text-xl">Ahorra tiempo</h3>
+<p class="opacity-80">Olvídate de llamar uno a uno. Nosotros hacemos el trabajo duro por ti en menos de 24 horas.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+<span class="material-symbols-outlined text-4xl mb-4">compare_arrows</span>
+<h3 class="font-h3 text-h2 mb-2 text-xl">Compara opciones</h3>
+<p class="opacity-80">Accede a una red curada de espacios y elige el que mejor se adapte a tu presupuesto y necesidades.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+<span class="material-symbols-outlined text-4xl mb-4">handshake</span>
+<h3 class="font-h3 text-h2 mb-2 text-xl">Sin comisiones</h3>
+<p class="opacity-80">Nuestro servicio para empresas es totalmente gratuito. Contacto directo con el espacio.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-padding bg-white">
+<div class="max-w-[800px] mx-auto px-8">
+<h2 class="font-h2 text-h2 text-center mb-12">Preguntas Frecuentes</h2>
+<div class="space-y-4">
+<details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition-all">
+<summary class="list-none flex justify-between items-center cursor-pointer font-bold text-on-surface">
+<span class="">¿Qué precios tienen las salas en Madrid?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 text-on-surface-variant">
+                            Los precios varían según la zona y capacidad. Una sala para 4-6 personas en el Barrio de Salamanca puede rondar los 30-50€/hora, mientras que grandes salas para eventos corporativos tienen presupuestos a medida.
+                        </div>
+</details>
+<details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition-all">
+<summary class="list-none flex justify-between items-center cursor-pointer font-bold text-on-surface">
+<span class="">¿Qué tan rápido recibiré una respuesta?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 text-on-surface-variant">
+                            Nuestro compromiso es que recibas las primeras propuestas personalizadas en menos de 24 horas laborables desde que envías tu solicitud.
+                        </div>
+</details>
+<details class="group border border-slate-200 rounded-xl p-4 bg-slate-50 open:bg-white transition-all">
+<summary class="list-none flex justify-between items-center cursor-pointer font-bold text-on-surface">
+<span class="">¿Qué tipos de espacios hay disponibles?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pt-4 text-on-surface-variant">
+                            Ofrecemos desde pequeños despachos privados y cabinas de llamadas hasta salas de formación para 50 personas, espacios de eventos híbridos con streaming y auditorios corporativos.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-section-padding bg-surface-container">
+<div class="max-w-[1280px] mx-auto px-8 text-center">
+<div class="max-w-2xl mx-auto space-y-6">
+<h2 class="font-h1 text-h1 text-primary">Recibe tus primeras ofertas hoy</h2>
+<p class="text-body-lg text-on-surface-variant">No pierdas más tiempo navegando en decenas de webs. Dinos qué necesitas y nosotros te traemos las mejores opciones de Madrid.</p>
+<div class="bg-white p-8 rounded-2xl shadow-xl border border-outline-variant text-left mt-8">
+<form class="grid md:grid-cols-2 gap-4">
+<div class="space-y-2 md:col-span-2">
+<label class="font-label-md">Nombre</label>
+<input class="w-full rounded-lg border-slate-300 h-12" placeholder="Tu nombre" type="text"/>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="font-label-md">Email</label>
+<input class="w-full rounded-lg border-slate-300 h-12" placeholder="tu@email.com" type="email"/>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="font-label-md">¿Qué necesitas?</label>
+<textarea class="w-full rounded-lg border-slate-300" placeholder="Describe tu evento o necesidad..." rows="4"></textarea>
+</div>
+<button class="md:col-span-2 bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-all active:scale-95" type="submit">Solicitar propuestas gratis</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 w-full font-manrope text-sm">
+<div class="max-w-[1280px] mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<div class="mb-4"><img alt="SpacesON Logo" class="h-8 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ujmXW5tIJ09GYF-YT4Wuis9bU4aIkK70iHTAJD6OJD_ggd1d4b953VvwhriCOCEYgw6WUhx3cylODBPKhIAs8oAcCtDpQ7Ms8SqJlPrMxVuvFv-zcVVhW5AjXJDhyq_Om2iCmobZIqfUbonZWm-dHDfJP55MIdHELs8P-fzd3xYfyx9P8jCc9VLboFPHn273G9rPS2C7WAIlehuDqLlw68nrDxJGAwIA_ZHalTpgFG4ddcSygqlxq488zMb39v1oohD6dQB76IihrU"/></div>
+<p class="text-slate-500 max-w-sm">© 2024 SpacesON. All rights reserved. High-quality workspaces in the heart of Madrid.</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end">
+<a class="text-slate-500 hover:underline hover:text-blue-600 transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:underline hover:text-blue-600 transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:underline hover:text-blue-600 transition-all opacity-80 hover:opacity-100" href="#">Cookie Settings</a>
+<a class="text-blue-700 dark:text-blue-400 font-semibold hover:underline hover:text-blue-600 transition-all opacity-80 hover:opacity-100" href="#">Partner with Us</a>
+</div>
+</div>
+</footer>
+</body></html>
