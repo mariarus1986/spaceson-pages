@@ -10,7 +10,7 @@ Bubble remains responsible for transactional product routes, including:
 This app owns SEO route families such as:
 
 - `/{city}/`
-- `/salas-de-reunion/{city}/`
+- `/salas-de-reunion/{city}/` et `/salas-de-reunion-{city}` → 301 vers `/salas-de-reuniones-{city}`
 - `/salas-de-formacion/{city}/`
 - `/coworking/{city}/`
 - `/salas-para-eventos/{city}/`
