@@ -1,0 +1,39 @@
+name: Refresh search results pages
+
+# Régénère chaque jour les pages de résultats par ville (busqueda/*.html) et
+# leurs données (search-data/*.js) à partir de la Data API Bubble. Le commit
+# déclenche le déploiement Cloudflare Pages.
+on:
+  schedule:
+    - cron: '30 3 * * *' # 03:30 UTC, tous les jours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-search
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate pages
+        run: node tools/generate-search-pages.js --out . --dir busqueda --no-cache
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add busqueda search-data
+          if git diff --cached --quiet; then
+            echo "No change."
+          else
+            git commit -m "Daily refresh of search results pages"
+            git push
+          fi
