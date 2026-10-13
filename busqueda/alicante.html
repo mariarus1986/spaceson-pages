@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Espacios y salas por horas en Alicante | SpacesON</title>
+<meta name="description" content="26 salas de reuniones, aulas de formación y espacios para eventos por horas en Alicante. Filtra por tipo y capacidad."/>
+<link rel="canonical" href="https://www.spaces-on.com/espacios-horas/Alicante"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#525557",
+                        "tertiary-fixed-dim": "#c5c6c8",
+                        "surface": "#f9f9ff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#f9f9ff",
+                        "surface-container-highest": "#dce2f7",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#e9edff",
+                        "on-primary-fixed-variant": "#00497e",
+                        "on-tertiary-fixed": "#191c1e",
+                        "on-background": "#141b2b",
+                        "on-secondary-fixed": "#001f25",
+                        "surface-variant": "#dce2f7",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#6b6d6f",
+                        "primary-fixed": "#d2e4ff",
+                        "outline": "#717782",
+                        "on-primary-container": "#e9f1ff",
+                        "surface-container-low": "#f1f3ff",
+                        "primary": "#1d70b8",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#edf0ff",
+                        "secondary-container": "#7be6fe",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "secondary": "#3eb1c8",
+                        "surface-container-high": "#e1e8fd",
+                        "on-surface-variant": "#414751",
+                        "background": "#f9f9ff",
+                        "on-secondary": "#ffffff",
+                        "primary-container": "#1d70b8",
+                        "on-secondary-fixed-variant": "#004e5b",
+                        "secondary-fixed": "#a7edff",
+                        "inverse-surface": "#293040",
+                        "primary-fixed-dim": "#a0caff",
+                        "tertiary-fixed": "#e1e2e4",
+                        "on-secondary-container": "#006777",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#a0caff",
+                        "on-tertiary-container": "#eff0f2",
+                        "surface-tint": "#0061a6",
+                        "on-surface": "#141b2b",
+                        "outline-variant": "#c1c7d2",
+                        "surface-dim": "#d3daef",
+                        "on-primary-fixed": "#001c37",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#69d5ed"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "lg": "24px",
+                        "sm": "8px",
+                        "md": "16px",
+                        "xl": "32px",
+                        "unit": "4px",
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Work Sans"],
+                        "body-md": ["Work Sans"],
+                        "body-lg": ["Work Sans"],
+                        "headline-xl": ["Manrope"],
+                        "label-md": ["Work Sans"],
+                        "headline-lg": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-sm": ["Work Sans"],
+                        "headline-md": ["Manrope"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "14px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="text-on-surface font-body-md antialiased min-h-screen flex flex-col bg-background">
+<nav class="bg-surface-container-lowest shadow-md w-full sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<a class="flex items-center" href="/"><img alt="SpacesON" class="h-10 w-auto" src="https://pages.spaces-on.com/home-assets/logo-spaceson.png"/></a>
+<div class="hidden md:flex gap-6">
+<a class="text-primary border-b-2 border-secondary pb-1 font-semibold" href="/espacios-horas">Buscar espacios</a>
+<a class="text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity" href="/busqueda-gratuita-espacios-reuniones-eventos">Te lo buscamos gratis</a>
+<a class="text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity" href="https://blog.spaces-on.com">Blog</a>
+</div></div>
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-2 text-primary font-label-md border border-primary/30 px-4 py-2 rounded-lg hover:bg-primary/10 transition-colors" href="/promocionar-espacios-eventos">Publicar espacio</a>
+<a class="hidden md:block text-on-surface-variant font-label-md hover:underline" href="/login_page">Entrar</a>
+</div></div></nav>
+<main class="flex-grow">
+<section class="bg-surface-container px-margin-mobile md:px-margin-desktop py-8">
+<div class="max-w-7xl mx-auto">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-2">Espacios para alquilar por horas en Alicante</h1>
+<p id="sr-count" class="font-body-md text-on-surface-variant mb-6" aria-live="polite">26 espacios</p>
+<form id="sr-filters" class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col md:flex-row gap-4 md:items-end" autocomplete="off">
+<div class="flex-1 flex flex-col">
+<label for="sr-city" class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wide">Ciudad</label>
+<select id="sr-city" class="w-full rounded-lg border-outline-variant font-body-md text-on-surface"><option value="Madrid">Madrid</option><option value="Barcelona">Barcelona</option><option value="Sevilla">Sevilla</option><option value="Valencia">Valencia</option><option value="Granada">Granada</option><option value="Zaragoza">Zaragoza</option><option value="Málaga">Málaga</option><option value="Murcia">Murcia</option><option value="Salamanca">Salamanca</option><option value="Bilbao">Bilbao</option><option value="León">León</option><option value="Palma">Palma</option><option value="Alicante" selected>Alicante</option><option value="Castellón de la Plana">Castellón de la Plana</option></select>
+</div>
+<div class="flex-1 flex flex-col">
+<label for="sr-type" class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wide">Tipo</label>
+<select id="sr-type" class="w-full rounded-lg border-outline-variant font-body-md text-on-surface"><option value="">Todos los tipos</option><option value="salas-de-reuniones">Salas de reuniones</option><option value="espacios-para-eventos">Espacios para eventos</option><option value="aulas-de-formacion">Aulas de formación</option><option value="despachos">Despachos</option><option value="estudios-fotograficos">Estudios fotográficos</option><option value="salas-de-terapias">Salas de terapias</option><option value="aulas-informaticas">Aulas informáticas</option><option value="ruedas-de-prensa">Ruedas de prensa</option><option value="auditorios">Auditorios</option><option value="salas-de-conferencias">Salas de conferencias</option><option value="estudios-de-grabacion">Estudios de grabación</option><option value="coworking">Coworking</option></select>
+</div>
+<div class="flex-1 flex flex-col">
+<label for="sr-pax" class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wide">Capacidad mínima</label>
+<input id="sr-pax" type="number" min="1" inputmode="numeric" placeholder="¿Cuántas personas?" class="w-full rounded-lg border-outline-variant font-body-md text-on-surface placeholder:text-outline-variant"/>
+</div>
+<button id="sr-reset" type="button" class="font-label-md px-4 py-3 rounded-lg border border-primary/30 text-primary hover:bg-primary/10 transition-colors">Borrar filtros</button>
+<a class="font-label-md px-4 py-3 rounded-lg bg-secondary text-on-secondary text-center hover:brightness-95 transition-all" href="/search-results-map?location=Alicante">Ver mapa</a>
+</form>
+</div></section>
+<section class="px-margin-mobile md:px-margin-desktop py-10">
+<div class="max-w-7xl mx-auto">
+<div id="sr-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-gutter"></div>
+<p id="sr-empty" class="hidden text-center font-body-lg text-on-surface-variant py-16">Ningún espacio coincide con estos filtros. Prueba a ampliar la búsqueda o <a class="text-primary underline" href="/busqueda-gratuita-espacios-reuniones-eventos">pídenos que te lo busquemos gratis</a>.</p>
+<div class="text-center mt-10"><button id="sr-more" type="button" class="hidden bg-primary text-on-primary font-label-md px-8 py-4 rounded-lg hover:brightness-110 transition-all">Ver más espacios</button></div>
+<noscript><p class="text-center py-10">Activa JavaScript para ver los espacios, o consulta <a class="text-primary underline" href="/alicante">la página de Alicante</a>.</p></noscript>
+</div></section>
+</main>
+<footer class="bg-surface-container-highest py-12 border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<div class="col-span-1 mb-8 md:mb-0"><img alt="SpacesON" class="h-8 w-auto mb-4" src="https://pages.spaces-on.com/home-assets/logo-spaceson.png"/><p class="text-label-sm text-on-surface-variant">© 2026 SpacesON. Todos los derechos reservados.</p></div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 justify-start md:justify-end">
+<a class="text-label-sm text-on-surface-variant hover:text-primary transition-all" href="/pagina_estatica/aviso-legal">Aviso Legal</a>
+<a class="text-label-sm text-on-surface-variant hover:text-primary transition-all" href="/pagina_estatica/politica-de-privacidad">Política de privacidad</a>
+<a class="text-label-sm text-on-surface-variant hover:text-primary transition-all" href="/pagina_estatica/uso-de-cookies">Uso de cookies</a>
+<a class="text-label-sm text-on-surface-variant hover:text-primary transition-all" href="/pagina_estatica/quienes-somos">¿Quiénes somos?</a>
+<a class="text-label-sm text-on-surface-variant hover:text-primary transition-all" href="/pagina_estatica/sitemap-spaceson">Sitemap</a>
+</div></div></footer>
+<script src="https://pages.spaces-on.com/search-data/alicante.js"></script>
+<script>
+(function () {
+  var DATA = (window.SPO_SEARCH && window.SPO_SEARCH.rooms) || [];
+  var PAGE = 24, shown = PAGE, list = DATA;
+  var grid = document.getElementById('sr-grid'), count = document.getElementById('sr-count'),
+      more = document.getElementById('sr-more'), empty = document.getElementById('sr-empty'),
+      type = document.getElementById('sr-type'), pax = document.getElementById('sr-pax');
+  function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+  function card(r) {
+    var a = el('a', 'relative block bg-surface-container-lowest rounded-xl border border-outline-variant/30 shadow-sm overflow-hidden group hover:shadow-md transition-shadow');
+    a.href = r.u;
+    var pic = el('div', 'relative h-44 w-full overflow-hidden bg-surface-container');
+    if (r.i) {
+      var img = el('img', 'w-full h-full object-cover transition-transform duration-500 group-hover:scale-105');
+      img.loading = 'lazy'; img.alt = r.n; img.src = r.i;
+      img.onerror = function () { this.remove(); };
+      pic.appendChild(img);
+    }
+    if (r.t === 2) pic.appendChild(el('div', 'absolute top-3 left-3 bg-secondary text-on-secondary px-2 py-1 rounded text-label-sm font-bold uppercase tracking-wide', 'Premium'));
+    a.appendChild(pic);
+    var body = el('div', 'p-4');
+    body.appendChild(el('h2', 'font-headline-md text-[18px] leading-tight text-primary mb-1', r.n));
+    if (r.co) body.appendChild(el('p', 'font-body-sm text-on-surface-variant mb-3', r.co));
+    var meta = el('div', 'flex flex-wrap items-center gap-2');
+    if (r.p) meta.appendChild(el('span', 'font-semibold text-secondary whitespace-nowrap mr-auto', 'Desde ' + r.p + ' €/h'));
+    if (r.c) meta.appendChild(el('span', 'bg-surface-container-low px-2 py-1 rounded-full text-[11px] font-label-sm text-on-surface-variant', 'Hasta ' + r.c + ' personas'));
+    if (r.m) meta.appendChild(el('span', 'bg-surface-container-low px-2 py-1 rounded-full text-[11px] font-label-sm text-on-surface-variant', r.m + ' m²'));
+    body.appendChild(meta);
+    a.appendChild(body);
+    return a;
+  }
+  function render() {
+    grid.textContent = '';
+    var frag = document.createDocumentFragment();
+    list.slice(0, shown).forEach(function (r) { frag.appendChild(card(r)); });
+    grid.appendChild(frag);
+    count.textContent = list.length + (list.length === 1 ? ' espacio' : ' espacios');
+    more.classList.toggle('hidden', shown >= list.length);
+    empty.classList.toggle('hidden', list.length > 0);
+  }
+  function apply(push) {
+    var k = type.value, n = parseInt(pax.value, 10) || 0;
+    list = DATA.filter(function (r) { return (!k || r.k.indexOf(k) !== -1) && (!n || r.c >= n); });
+    shown = PAGE;
+    if (push) {
+      var q = new URLSearchParams(location.search);
+      k ? q.set('tipo', k) : q.delete('tipo');
+      n ? q.set('pax', n) : q.delete('pax');
+      var s = q.toString();
+      history.replaceState(null, '', location.pathname + (s ? '?' + s : ''));
+    }
+    render();
+  }
+  // N'afficher que les types réellement présents dans cette ville
+  var present = {};
+  DATA.forEach(function (r) { r.k.forEach(function (k) { present[k] = (present[k] || 0) + 1; }); });
+  Array.prototype.slice.call(type.options).forEach(function (o) {
+    if (!o.value) return;
+    if (!present[o.value]) o.remove(); else o.textContent += ' (' + present[o.value] + ')';
+  });
+  var q0 = new URLSearchParams(location.search);
+  if (q0.get('tipo') && present[q0.get('tipo')]) type.value = q0.get('tipo');
+  if (parseInt(q0.get('pax'), 10) > 0) pax.value = parseInt(q0.get('pax'), 10);
+  document.getElementById('sr-city').addEventListener('change', function () {
+    location.href = '/espacios-horas/' + encodeURIComponent(this.value) + '?location=' + encodeURIComponent(this.value);
+  });
+  type.addEventListener('change', function () { apply(true); });
+  pax.addEventListener('input', function () { apply(true); });
+  document.getElementById('sr-filters').addEventListener('submit', function (e) { e.preventDefault(); });
+  document.getElementById('sr-reset').addEventListener('click', function () { type.value = ''; pax.value = ''; apply(true); });
+  more.addEventListener('click', function () { shown += PAGE; render(); });
+  apply(false);
+})();
+</script>
+</body></html>
