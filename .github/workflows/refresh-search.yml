@@ -1,7 +1,8 @@
 name: Refresh search results pages
 
 # Régénère chaque jour les pages de résultats par ville (busqueda/*.html) et
-# leurs données (search-data/*.js) à partir de la Data API Bubble. Le commit
+# leurs données (search-data/*.js), ainsi que sitemap-espacio-horas.xml, à
+# partir de la Data API Bubble. Le commit
 # déclenche le déploiement Cloudflare Pages.
 on:
   schedule:
@@ -26,11 +27,13 @@ jobs:
           node-version: 22
       - name: Generate pages
         run: node tools/generate-search-pages.js --out . --dir busqueda --no-cache
+      - name: Generate espacio-horas sitemap
+        run: node tools/generate-sitemap-espacio-horas.js --out .
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add busqueda search-data
+          git add busqueda search-data sitemap-espacio-horas.xml
           if git diff --cached --quiet; then
             echo "No change."
           else
