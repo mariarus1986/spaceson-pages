@@ -61,8 +61,22 @@ tr:last-child td{border-bottom:0}
 .offer ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
 .why{display:flex;flex-direction:column;gap:8px;background:var(--soft);border-radius:8px;padding:14px 16px;font-size:16px}
 .guarantee{border-left:4px solid var(--accent);padding-left:12px;font-size:15px}
+.seal-row{display:flex;flex-wrap:wrap;gap:8px}
+.seal{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:600;padding:6px 12px;border-radius:99px;border:1px solid var(--line);background:var(--surface)}
+.seal svg{width:18px;height:18px;color:var(--brand);flex:none}
+.seal:first-child{border-color:var(--accent)}
+.guarantee-box{display:flex;gap:14px;align-items:flex-start;border:2px solid var(--accent);border-radius:10px;padding:14px 16px}
+.guarantee-box svg{width:40px;height:40px;color:var(--accent);flex:none}
+.guarantee-box b{font:700 18px/1.2 var(--display)}
+.guarantee-box p{font-size:15px;margin-top:4px}
+.guarantee-box div{min-width:0}
 .btn{display:inline-block;align-self:flex-start;background:var(--brand);color:var(--brand-ink);font:600 18px/1.2 var(--body);text-decoration:none;padding:16px 24px;border-radius:8px}
 .btn:hover{filter:brightness(1.08)} .btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0 16px}
+.faq summary{cursor:pointer;font-weight:600;padding:14px 0;list-style-position:outside}
+.faq summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.faq details p{padding-bottom:14px;color:var(--ink);max-width:62ch}
+.faq a{color:var(--brand)}
 footer{color:var(--muted);font-size:15px;display:flex;flex-direction:column;gap:4px}
 </style>
 <style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}</style>
@@ -74,6 +88,11 @@ footer{color:var(--muted);font-size:15px;display:flex;flex-direction:column;gap:
     <span class="eyebrow">SpacesON · Votre recherche de salle</span>
     <h1>Votre formation commerciale à Bilbao : 4 options disponibles</h1>
     <p class="lead">Bonjour, nous avons interrogé des hôtels et des centres d'affaires de Bilbao pour vos 2 jours de formation. Voici les réponses reçues, avec un total estimé pour chacune. Les noms et les contacts sont transmis une fois la recherche réservée.</p>
+    <div class="seal-row">
+      <span class="seal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Satisfait ou 100 % remboursé</span>
+      <span class="seal"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg>Paiement sécurisé Stripe</span>
+      <span class="seal"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>0 % de commission</span>
+    </div>
   </header>
 
   <section>
@@ -187,14 +206,57 @@ footer{color:var(--muted);font-size:15px;display:flex;flex-direction:column;gap:
       <p><b>Les meilleurs prix, en direct.</b> Vous réservez directement avec l'hôtel ou le centre, sans intermédiaire.</p>
       <p><b>Aucune commission.</b> Les autres portails prennent une commission aux hôtels, et elle se retrouve dans le prix que vous payez. Chez SpacesON, il n'y en a pas : vous obtenez le prix direct.</p>
     </div>
-    <p class="guarantee">Si aucune de ces options ne vous convient, nous vous remboursons intégralement.</p>
+    <div class="guarantee-box">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div><b>Garantie satisfait ou 100 % remboursé</b><p>Si vous n'êtes pas satisfaite, ou si aucune option ne vous convient, nous vous remboursons les 29 € en totalité. Sans justification : il suffit de répondre à notre email.</p></div>
+    </div>
     <a class="btn" href="https://buy.stripe.com/8x2eV6bTB6Xg5cO8vRbbG08" target="_blank" rel="noopener">Recevoir les contacts · 29 € + TVA</a>
     <p class="note">Paiement sécurisé par Stripe. Dès réception, je vous envoie les contacts par email.</p>
   </section>
 
+  <section class="faq" aria-labelledby="faq-title">
+    <h2 id="faq-title">Vos questions</h2>
+    <details>
+      <summary>Qui est SpacesON ?</summary>
+      <p>SpacesON (spaces-on.com) est un portail espagnol de location de salles à l'heure ou à la journée : salles de réunion, salles de formation et espaces pour événements, avec plus de 3 000 espaces dans toute l'Espagne. Je m'appelle Maria, j'en suis la fondatrice, et c'est moi qui m'occupe de votre demande.</p>
+    </details>
+    <details>
+      <summary>Les prix affichés sont-ils réels ?</summary>
+      <p>Oui. Chaque option correspond à une réponse écrite qu'un établissement nous a envoyée le 4 novembre, avec ses tarifs. Les totaux sont calculés à partir de ces tarifs pour 12 personnes et 2 jours, TVA incluse. Le prix final dépend des menus que vous choisirez.</p>
+    </details>
+    <details>
+      <summary>Pourquoi les noms des établissements ne sont-ils pas affichés ?</summary>
+      <p>Trouver ces options nous a demandé du travail : sélectionner les établissements, les contacter, relancer et comparer les devis. Les 29 € rémunèrent ce travail. Les noms et les contacts directs sont donc transmis une fois la recherche réservée.</p>
+    </details>
+    <details>
+      <summary>Est-ce que je paie autre chose ensuite ?</summary>
+      <p>Non. Vous payez la salle et la restauration directement à l'établissement, au prix qu'il vous propose. Nous ne prenons aucune commission et rien n'est ajouté à son tarif.</p>
+    </details>
+    <details>
+      <summary>Et si je ne suis pas satisfaite ?</summary>
+      <p>Satisfait ou 100 % remboursé : si le service ne vous convient pas, ou si aucune option ne vous va, nous vous remboursons les 29 € en totalité, sans justification. Il suffit de répondre à notre email pour le demander. Le remboursement est fait sur la carte utilisée pour le paiement.</p>
+    </details>
+    <details>
+      <summary>Le paiement est-il sécurisé ?</summary>
+      <p>Le paiement passe par Stripe, un des principaux prestataires de paiement en ligne. Vous payez sur la page sécurisée de Stripe, et nous ne voyons jamais les données de votre carte.</p>
+    </details>
+    <details>
+      <summary>Puis-je avoir une facture au nom de mon entreprise ?</summary>
+      <p>Oui. Stripe vous envoie un reçu automatiquement. Pour une facture au nom de votre entreprise, envoyez-nous la raison sociale, l'adresse et le numéro de TVA.</p>
+    </details>
+    <details>
+      <summary>Que se passe-t-il après le paiement ?</summary>
+      <p>Je vous envoie par email les noms, adresses et contacts directs des établissements, avec leurs devis et leurs menus. Vous réservez ensuite directement avec celui que vous préférez. Si besoin, je confirme avec lui les détails qui manquent (paperboard, horaires du déjeuner).</p>
+    </details>
+    <details>
+      <summary>Je préfère en parler avant de payer</summary>
+      <p>Bien sûr. Répondez simplement à mon email ou écrivez à <b>soporte@spaces-on.com</b>. Vous pouvez aussi voir mon profil <a href="https://www.linkedin.com/in/mariachristinarus" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    </details>
+  </section>
+
   <footer>
     <span>Maria, fondatrice de SpacesON</span>
-    <span>spaces-on.com</span>
+    <span>SpacesON · spaces-on.com</span>
   </footer>
 </div>
 
