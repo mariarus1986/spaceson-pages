@@ -1,0 +1,41 @@
+name: Refresh Black Friday page
+
+# Régénère ofertas-black-friday.html toutes les 2 h à partir de la Data API
+# Bubble (salles avec descuento_black_friday_number > 0 et Company abonnée).
+# Le commit déclenche le déploiement Cloudflare Pages.
+# À DÉSACTIVER après le 01/12/2026.
+on:
+  schedule:
+    - cron: '15 */2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-search
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate page
+        run: node tools/generate-black-friday.js --out .
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ofertas-black-friday.html
+          if git diff --cached --quiet; then
+            echo "No change."
+          else
+            git commit -m "Refresh Black Friday page"
+            git pull --rebase
+            git push
+          fi
