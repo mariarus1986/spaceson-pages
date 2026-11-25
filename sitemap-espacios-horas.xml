@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-      <loc>https://www.spaces-on.com/espacios-horas</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.spaces-on.com/espacios-horas</loc></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Alicante</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Barcelona</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Bilbao</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Castell%C3%B3n%20de%20la%20Plana</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Granada</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Le%C3%B3n</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Madrid</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/M%C3%A1laga</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Murcia</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Palma</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Salamanca</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Sevilla</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Valencia</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://www.spaces-on.com/espacios-horas/Zaragoza</loc><lastmod>2026-11-25</lastmod></url>
+</urlset>
